@@ -119,6 +119,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   background-color: #f5f0ec;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -152,12 +153,11 @@ body {
   color: #f5f0ec;
   height: 100%;
   margin-left: 5em;
-  margin-top: 2em;
 }
 
 .header__box-title {
   font-family: 'Lustria', serif;
-  margin-top: 2em;
+  margin-top: 0.5em;
   z-index: 3;
   font-size: 3rem;
 }
@@ -176,14 +176,25 @@ body {
   opacity: 0.4;
 }
 
-.logo-icon {
-  position: fixed;
-  top: 23px;
-  display: block;
-  margin: 1em auto;
-  text-align: center;
-  width: 30%;
+.logo-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30vw;
   height: 10vh;
+  margin-top: 0.5em;
+}
+
+.logo-icon {
+  display: block;
+  position: fixed;
+  text-align: center;
   text-align: center;
   font-size: 1rem;
   opacity: 0.7;
@@ -501,6 +512,11 @@ body {
     margin-top: 0.5em;
     font-size: 1.8rem;
   }
+  .header__box {
+    margin-top: 5em;
+    width: 100vw;
+    margin: 5em auto;
+  }
   .header__box-title {
     font-size: 6rem;
   }
@@ -576,13 +592,34 @@ body {
             justify-content: center;
     height: 10vh;
     width: 100vw;
+    margin-left: 5em;
   }
   .deskop__items-item {
+    position: relative;
     color: #f5f0ec;
     text-decoration: none;
     text-transform: uppercase;
-    border: 1px solid #f5f0ec;
-    padding: 2em;
+    padding: 1em 1em;
+    margin-left: 4em;
+  }
+  .deskop__items-item::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    background-color: #f5f0ec;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    content: '';
+  }
+  .deskop__items-item:hover::before {
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
   }
 }
 /*# sourceMappingURL=main.css.map */
