@@ -64,16 +64,20 @@ body {
 		}
 	}
 }
+
 .logo-icon {
 	position: fixed;
-	display: block;
 	top: 23px;
-
+	display: block;
+	margin: 1em auto;
+	text-align: center;
 	width: 30%;
+	height: 10vh;
 	text-align: center;
 	font-size: 1rem;
 	opacity: 0.7;
 	z-index: 6;
+	font-family: 'Lustria', serif;
 	color: $text-color-white;
 	transition: color 0.15s;
 	&--active {
@@ -86,7 +90,8 @@ body {
 	height: 70%;
 	bottom: 0;
 	right: -260px;
-	z-index: 2;
+	z-index: 1;
+	opacity: 0.7;
 }
 .nav {
 	position: fixed;
@@ -102,6 +107,7 @@ body {
 	background-color: $text-color-white;
 	transition: transform 0.3s;
 	z-index: 5;
+	border-right: 1px solid $bgc-color-black;
 	&__logo {
 		color: $bgc-color-black;
 	}
@@ -138,6 +144,9 @@ body {
 }
 .nav-active {
 	transform: translateX(0%);
+}
+.deskop {
+	display: none;
 }
 
 .demo {
@@ -192,11 +201,24 @@ body {
 	}
 }
 // aboutme
-.aboutus {
+.aboutme {
 	width: 100vw;
-	line-height: 1.5em;
+	line-height: 2em;
 	margin: 1em 0;
 	text-align: center;
+	&__box {
+		margin: 1.2em;
+	}
+}
+.aboutme__box-text {
+	font-weight: 300;
+	font-size: 2rem;
+	margin-top: 1em;
+}
+.aboutme__box-special {
+	background-color: $bgc-color-black;
+	color: $text-color-white;
+	color: $text-color-white;
 }
 
 .card {
@@ -235,4 +257,133 @@ body {
 
 .section-test {
 	height: 200vh;
+}
+
+// media
+
+@media (min-width: 576px) {
+	.logo-icon {
+		font-size: 1.5rem;
+	}
+	.header__box-title {
+		font-size: 4rem;
+	}
+	.header__box-text {
+		font-size: 3rem;
+	}
+	.header__box-info {
+		font-size: 2rem;
+	}
+	.section__title {
+		font-size: 3rem;
+	}
+	.aboutme__box-text {
+		font-size: 2.5rem;
+	}
+	.nav__items-item {
+		font-size: 1.8rem;
+	}
+	.custom-shape-divider-top-1645355323 svg {
+		width: calc(100% + 1.3px);
+		height: 100px;
+	}
+}
+@media (min-width: 768px) {
+	.logo-icon {
+		font-size: 1.8rem;
+	}
+	.header__box-title {
+		font-size: 5rem;
+	}
+	.header__box-text {
+		font-size: 3.5rem;
+	}
+	.header__box-info {
+		font-size: 2.5rem;
+	}
+	.section__title {
+		font-size: 3.2rem;
+	}
+	.aboutme__box-text {
+		font-size: 2.8rem;
+		line-height: 1.5em;
+	}
+	.nav__items-item {
+		font-size: 2rem;
+	}
+	.custom-shape-divider-top-1645355323 svg {
+		width: calc(100% + 2px);
+		height: 120px;
+	}
+}
+@media (min-width: 992px) {
+	.logo-icon {
+		margin-top: 0.5em;
+		font-size: 1.8rem;
+	}
+	.header__box-title {
+		font-size: 6rem;
+	}
+	.header__box-text {
+		font-size: 4rem;
+	}
+	.header__box-info {
+		font-size: 3rem;
+	}
+	.section__title {
+		font-size: 3.5rem;
+		margin-top: 3em;
+	}
+	.aboutme__box-text {
+		margin-top: 3em;
+		font-size: 2.8rem;
+		line-height: 1.5em;
+	}
+	.card {
+		margin-top: 4em;
+	}
+	.demo {
+		display: none;
+	}
+	.custom-shape-divider-top-1645355323 svg {
+		width: calc(100% + 2px);
+		height: 140px;
+	}
+	.logo-icon {
+		display: none;
+	}
+	.deskop {
+		position: absolute;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		height: 20vh;
+		width: 100vw;
+		&-logo {
+			text-align: center;
+			font-family: 'Lustria', serif;
+			width: 30%;
+			text-align: center;
+			font-size: 2rem;
+			opacity: 0.7;
+			color: $text-color-white;
+		}
+		&__items {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			height: 10vh;
+			width: 100vw;
+			&-item {
+				color: $text-color-white;
+				text-decoration: none;
+				text-transform: uppercase;
+				border: 1px solid $text-color-white;
+				padding: 2em;
+			}
+		}
+	}
 }
