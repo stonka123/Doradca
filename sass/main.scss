@@ -1,5 +1,6 @@
 @import './colors';
 @import './hamburger';
+// @import './components';
 
 *,
 *::before,
@@ -18,6 +19,7 @@ body {
 	// font-family: 'Lustria', serif;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
+	background-color: $text-color-white;
 }
 .wrapper {
 	margin: 0 auto;
@@ -64,13 +66,14 @@ body {
 }
 .logo-icon {
 	position: fixed;
-	top: 22px;
-	left: 15%;
-	transform: translateX(-50%);
-	height: 40px;
-	font-size: 30px;
+	display: block;
+	top: 23px;
+
+	width: 30%;
+	text-align: center;
+	font-size: 1rem;
 	opacity: 0.7;
-	z-index: 5;
+	z-index: 6;
 	color: $text-color-white;
 	transition: color 0.15s;
 	&--active {
@@ -98,6 +101,7 @@ body {
 	transform: translateX(-100%);
 	background-color: $text-color-white;
 	transition: transform 0.3s;
+	z-index: 5;
 	&__logo {
 		color: $bgc-color-black;
 	}
@@ -156,6 +160,79 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 }
+.compo {
+	position: relative;
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	width: 100%;
+	&__title {
+		position: relative;
+		display: block;
+		text-align: center;
+		font-family: 'Lustria', serif;
+		text-transform: uppercase;
+		margin: 1em;
+		font-size: 2rem;
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			width: 100%;
+
+			background-color: $bgc-color-black;
+			content: '';
+		}
+	}
+}
+// aboutme
+.aboutus {
+	width: 100vw;
+	line-height: 1.5em;
+	margin: 1em 0;
+	text-align: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	border-radius: 8px;
+	box-shadow: 3px 3px 1px black;
+	background-color: $bgc-color-black;
+	color: $text-color-white;
+	margin: 2em auto;
+	&__title {
+		font-family: 'Lustria', serif;
+		letter-spacing: 1.5px;
+		margin: 0.5em;
+		font-size: 2rem;
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 1.5em;
+		&-icon {
+			font-size: 2rem;
+			margin-right: 1em;
+		}
+		&-text {
+			font-weight: 300;
+			font-size: 1.8rem;
+		}
+	}
+}
+
 .section-test {
 	height: 200vh;
 }
