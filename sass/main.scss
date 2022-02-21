@@ -22,6 +22,28 @@ body {
 	background-color: $text-color-white;
 	overflow-x: hidden;
 }
+.loading-page {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $bgc-color-black;
+}
+.content {
+	display: none;
+	transition: 0.3s;
+}
+.content-show {
+	display: block;
+	opacity: 1;
+}
+.loading-page-hidden {
+	display: none;
+	opacity: 0;
+}
+
 .wrapper {
 	margin: 0 auto;
 	width: 100%;

@@ -1,0 +1,23 @@
+.ldBar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+}
+.ldBar.label-center > .ldBar-label {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #05fdd8;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.ldBar-label:after {
+	content: '%';
+	display: inline;
+}
+.ldBar.no-percent .ldBar-label:after {
+	content: '';
+}
