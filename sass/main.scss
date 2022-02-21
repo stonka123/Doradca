@@ -33,7 +33,7 @@ body {
 }
 .content {
 	display: none;
-	transition: 0.3s;
+	opacity: 0;
 }
 .content-show {
 	display: block;
@@ -79,6 +79,7 @@ body {
 			font-style: italic;
 			opacity: 0.6;
 			font-size: 2rem;
+			color: $additional-color;
 		}
 		&-info {
 			font-size: 1.6rem;
@@ -105,7 +106,7 @@ body {
 	z-index: 6;
 	// transform: translateX(-5%);
 	font-family: 'Lustria', serif;
-	color: $text-color-white;
+	color: $additional-color;
 	transition: color 0.15s;
 	&--active {
 		color: $bgc-color-black;
@@ -134,7 +135,7 @@ body {
 	background-color: $text-color-white;
 	transition: transform 0.3s;
 	z-index: 5;
-	border-right: 1px solid $bgc-color-black;
+	border-right: 1px solid $additional-color;
 	&__logo {
 		color: $bgc-color-black;
 	}
@@ -159,7 +160,7 @@ body {
 				height: 2px;
 				width: 100%;
 				transform: scaleX(0);
-				background-color: $bgc-color-black;
+				background-color: $additional-color;
 				transition: transform 0.3s;
 				content: '';
 			}
@@ -186,7 +187,7 @@ body {
 	position: absolute;
 	text-align: center;
 	bottom: 5vh;
-	color: $text-color-white;
+	color: $additional-color;
 	font-size: 3rem;
 	width: 100vw;
 	// transform: translateX(+50%);
@@ -222,7 +223,7 @@ body {
 			height: 2px;
 			width: 100%;
 
-			background-color: $bgc-color-black;
+			background-color: $additional-color;
 			content: '';
 		}
 	}
@@ -274,6 +275,7 @@ body {
 		&-icon {
 			font-size: 2rem;
 			margin-right: 1em;
+			color: $additional-color;
 		}
 		&-text {
 			font-weight: 300;
@@ -312,7 +314,7 @@ body {
 		justify-content: center;
 		height: 80px;
 		width: 100%;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid $additional-color;
 		&-title {
 			text-align: center;
 			font-family: 'Lustria', serif;

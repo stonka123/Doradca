@@ -22,25 +22,18 @@ const showNav = () => {
 
 const bar = () => {
 	var bar1 = new ldBar('.ldBar')
-
 	var bar2 = document.getElementsByClassName('myItem1').ldBar
 	bar1.set(100)
-	// console.log(bar1)
-	// showSite()
 }
-const showSite = () => {
-	if (bar1.value > 50) {
-		content.classList.add('content-show')
-	}
-}
-// bar()
+
 const showek = () => {
 	content.classList.add('content-show')
 	loadingPage.classList.add('loading-page-hidden')
 }
-setTimeout(showek, 2500)
 
 brgBtn.addEventListener('click', showNav)
 window.addEventListener('DOMContentLoaded', e => {
 	bar()
+	setTimeout(showek, 2500)
+	console.log('zaladowano')
 })
