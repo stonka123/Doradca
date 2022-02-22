@@ -5,6 +5,7 @@
 	position: absolute;
 	height: 100vh;
 	width: 100vw;
+	overflow: hidden;
 }
 .ldBar.label-center > .ldBar-label {
 	position: absolute;
@@ -13,6 +14,7 @@
 	color: #05fdd8;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	overflow: hidden;
 }
 .ldBar-label:after {
 	content: '%';

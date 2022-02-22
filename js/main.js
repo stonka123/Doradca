@@ -30,10 +30,10 @@ const showek = () => {
 	content.classList.add('content-show')
 	loadingPage.classList.add('loading-page-hidden')
 }
-
+bar()
 brgBtn.addEventListener('click', showNav)
-window.addEventListener('DOMContentLoaded', e => {
-	bar()
-	setTimeout(showek, 2500)
-	console.log('zaladowano')
-})
+// window.addEventListener('DOMContentLoaded', e => {
+// 	bar()
+// 	setTimeout(showek, 2500)
+// 	console.log('zaladowano')
+// })

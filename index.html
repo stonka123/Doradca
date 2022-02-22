@@ -14,14 +14,15 @@
     <link rel="stylesheet" type="text/css" href="./css/loading-bar.css" />
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="loading-page">
-        <div class="ldBar label-center" data-value="0" data-stroke="#05fdd8" data-preset="circle" data-duration="3">
+        <div class="ldBar label-center" data-value="0" data-stroke="#05fdd8" data-preset="circle" data-duration="0">
         </div>
     </div>
     <div class="content">
@@ -134,7 +135,7 @@
                     <div class="offer">
                         <div class="offer__top">
                             <p class="offer__top-title">Kredyt gotówkowy</p>
-                            <p class="offer__top-info">małe marzenia i duże plany
+                            <p class="offer__top-info">Małe marzenia i duże plany
                             </p>
                         </div>
                         <div class="offer__bottom">
@@ -177,12 +178,11 @@
                         <div class="offer__bottom">
                             <ul class="offer__bottom-list">
                                 <li class="offer__bottom-list-item">na zakupy w sklepach stacjonarnych i
-                                    internetowych (sklepy oznaczone naszym logo)</li>
-                                <li class="offer__bottom-list-item">to bezpieczeństwo dla Twojego domowego budżetu:
-                                    spłatę możesz rozłożyć nawet na 120 rat</li>
-                                <li class="offer__bottom-list-item">na finansowanie tego, co potrzebujesz:
-                                    (towarów np. AGD, RTV, mebli, fotowoltaiki) </li>
-                                <li class="offer__bottom-list-item">to łatwy sposób na budowanie pozytywnej historii
+                                    internetowych</li>
+                                <li class="offer__bottom-list-item"> bezpieczeństwo dla Twojego domowego budżetu:
+                                </li>
+                                <li class="offer__bottom-list-item">wymarzony sprzęt RTV i AGD </li>
+                                <li class="offer__bottom-list-item">łatwy sposób na budowanie historii
                                     kredytowej
                                 </li>
                             </ul>
@@ -232,6 +232,13 @@
         </main>
     </div>
 
+    <!-- usatwic 2000 -->
+    <script>
+        $(window).on('load', function () {
+            $(".ldBar").fadeOut(20);
+            $(".content").fadeIn(20);
+        });
+    </script>
     <script type="text/javascript" src="./js/loading-bar.js"></script>
     <script src="./js/main.js"></script>
 
