@@ -1,5 +1,6 @@
 @import './colors';
 @import './hamburger';
+
 // @import './components';
 
 *,
@@ -410,7 +411,89 @@ body {
 		}
 	}
 }
+.section-contact {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+.form {
+	background-color: $bgc-color-black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	// margin: 1em 0;
+	padding: 2em 0;
 
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width: 80vw;
+
+		&-input,
+		&-area,
+		&-btn {
+			width: 70%;
+			margin-top: 1em;
+			padding: 0.5em;
+			background-color: rgb(41, 41, 41);
+			border: none;
+			border-radius: 5px;
+			color: $additional-color;
+			max-width: 500px;
+		}
+		&-text {
+			color: red;
+			font-size: 1.4rem;
+			margin-top: 0.5em;
+			visibility: hidden;
+		}
+		&-area {
+			width: 100%;
+			height: 150px;
+			max-width: 100%;
+			width: 100%;
+			min-height: 150px;
+			max-height: 300px;
+		}
+		&-btn {
+			padding: 0.5em 1em;
+			align-self: flex-end;
+			cursor: pointer;
+			max-width: 300px;
+			transition: transform 0.3s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+.form-error {
+	visibility: visible;
+}
+.map {
+	position: relative;
+	margin: 1em auto;
+	&-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($additional-color, 0.2);
+	}
+}
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 10vh;
+	background-color: $bgc-color-black;
+	color: $text-color-white;
+}
 // media
 
 @media (min-width: 576px) {
@@ -489,7 +572,7 @@ body {
 	}
 	.section__title {
 		font-size: 3.5rem;
-		margin-top: 3em;
+		// margin-top: 3em;
 	}
 	.aboutme__box-text {
 		margin-top: 3em;

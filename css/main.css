@@ -708,6 +708,130 @@ body {
   font-style: italic;
 }
 
+.section-contact {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 0;
+}
+
+.form__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+}
+
+.form__box-input, .form__box-area, .form__box-btn {
+  width: 70%;
+  margin-top: 1em;
+  padding: 0.5em;
+  background-color: #292929;
+  border: none;
+  border-radius: 5px;
+  color: #05fdd8;
+  max-width: 500px;
+}
+
+.form__box-text {
+  color: red;
+  font-size: 1.4rem;
+  margin-top: 0.5em;
+  visibility: hidden;
+}
+
+.form__box-area {
+  width: 100%;
+  height: 150px;
+  max-width: 100%;
+  width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+}
+
+.form__box-btn {
+  padding: 0.5em 1em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+  max-width: 300px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.form__box-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form-error {
+  visibility: visible;
+}
+
+.map {
+  position: relative;
+  margin: 1em auto;
+}
+
+.map-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 253, 216, 0.2);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: #000000;
+  color: #f5f0ec;
+}
+
 @media (min-width: 576px) {
   .logo-icon {
     font-size: 1.5rem;
@@ -786,7 +910,6 @@ body {
   }
   .section__title {
     font-size: 3.5rem;
-    margin-top: 3em;
   }
   .aboutme__box-text {
     margin-top: 3em;

@@ -5,6 +5,7 @@ const navItem = document.querySelectorAll('.nav__items-item')
 const checkedIcon = document.querySelector('.menu-icon__cheeckbox')
 const content = document.querySelector('.content')
 const loadingPage = document.querySelector('.loading-page')
+const year = document.querySelector('.footer-year')
 
 const showNav = () => {
 	nav.classList.toggle('nav-active')
@@ -30,10 +31,15 @@ const showek = () => {
 	content.classList.add('content-show')
 	loadingPage.classList.add('loading-page-hidden')
 }
-bar()
+
+const checkYear = () => {
+	const date = new Date().getFullYear()
+	year.textContent = date
+}
+checkYear()
 brgBtn.addEventListener('click', showNav)
-// window.addEventListener('DOMContentLoaded', e => {
-// 	bar()
-// 	setTimeout(showek, 2500)
-// 	console.log('zaladowano')
-// })
+window.addEventListener('DOMContentLoaded', e => {
+	bar()
+	setTimeout(showek, 2500)
+	console.log('zaladowano')
+})

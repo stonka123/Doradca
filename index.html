@@ -17,6 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -49,9 +50,7 @@
                     </div>
 
                 </div>
-
             </div>
-
             <nav class="nav">
                 <div class="nav__items">
                     <a href="#aboutme" class="nav__items-item">O mnie</a>
@@ -285,38 +284,55 @@
                 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </section>
 
 
+            <section class="section">
+                <div class="section__title" id="contact">Kontakt</div>
+            </section>
+
+            <section class="section-contact">
+                <form class="form">
+                    <div class="form__box"><input type="text" id="name" class="form__box-input"
+                            placeholder="Imię i nazwisko:">
+                        <p class="form__box-text">err</p>
+                    </div>
+
+                    <div class="form__box"><input type="tel" id="tel" class="form__box-input"
+                            placeholder="Numer telefonu:">
+                        <p class="form__box-text">err</p>
+                    </div>
+
+                    <div class="form__box"><textarea name="msg" id="msg" placeholder="Treść wiadomości..."
+                            class="form__box-area"></textarea>
+                        <p class="form__box-text">err</p>
+                    </div>
+                    <div class="form__box"><button class="form__box-btn">Wyslij</button></div>
+                </form>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1678.5749417421625!2d21.129172976365236!3d52.235706638487315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1645610261635!5m2!1spl!2spl"
+                        width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                        class="contact__map"></iframe>
+                    <div class="map-shadow"></div>
+                </div>
+            </section>
+            <footer class="footer">
+                <p class="footer-text">Oliwia Gauza &copy; <span class="footer-year"></span></p>
 
 
 
 
-            <div class="section-test"></div>
+            </footer>
 
         </main>
     </div>
 
-    <!-- usatwic 2000 -->
+
     <script>
         $(window).on('load', function () {
-            $(".ldBar").fadeOut(20);
-            $(".content").fadeIn(20);
+            $(".ldBar").fadeOut(2000);
+            $(".content").fadeIn(2000);
         });
     </script>
     <script type="text/javascript" src="./js/loading-bar.js"></script>
