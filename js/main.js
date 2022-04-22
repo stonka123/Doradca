@@ -10,6 +10,7 @@ const year = document.querySelector('.footer-year')
 const showNav = () => {
 	nav.classList.toggle('nav-active')
 	logoIcon.classList.toggle('logo-icon--active')
+	console.log('wyjezdza')
 
 	navItem.forEach(el => {
 		el.addEventListener('click', () => {
@@ -27,11 +28,6 @@ const bar = () => {
 	bar1.set(100)
 }
 
-const showek = () => {
-	content.classList.add('content-show')
-	loadingPage.classList.add('loading-page-hidden')
-}
-
 const checkYear = () => {
 	const date = new Date().getFullYear()
 	year.textContent = date
@@ -40,6 +36,6 @@ checkYear()
 brgBtn.addEventListener('click', showNav)
 window.addEventListener('DOMContentLoaded', e => {
 	bar()
-	setTimeout(showek, 2500)
+
 	console.log('zaladowano')
 })
