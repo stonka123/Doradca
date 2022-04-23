@@ -23,6 +23,10 @@ body {
 	background-color: $text-color-white;
 	overflow-x: hidden;
 }
+#languageSwitcher {
+	z-index: 199999;
+}
+
 .content {
 	display: none;
 }

@@ -18,7 +18,11 @@
     <link rel="stylesheet" href="css/flagi.css">
 
     <link rel="stylesheet" href="css/main.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="./js/i18n.js"></script>
 </head>
 
 <body>
@@ -34,7 +38,7 @@
 
 
             <div class="logo-mobile">
-                <div class="lang-menu">
+                <!-- <div class="lang-menu">
                     <div class="selected-lang">
                         English
                     </div>
@@ -48,14 +52,22 @@
                        
                     </ul>
 
-                </div>
+                </div> -->
                 <p class="logo-icon">Oliwia Gauza</p>
+                <select name="language" id="languageSwitcher">
+                    <option value="Polish">🇵🇱&emsp;Polska</option>
+                    <option value="English">🇬🇧&emsp;English</option>
+                    <option value="Germany">🇩🇪&emsp;Germany</option>
+
+
+                </select>
             </div>
             <img class="imgg" src="./img/headerr.png" alt="">
+
             <div class="header__box ">
                 <h1 class="header__box-title">Oliwia Gauza</h1>
-                <h3 class="header__box-text">Doradca kredytowy</h3>
-                <p class="header__box-info">Powierz mi swoje finanse</p>
+                <h3 class="header__box-text" data-i18n="intro.title"></h3>
+                <p class="header__box-info" data-i18n="intro.subTitle">Powierz mi swoje finanse</p>
             </div>
 
 

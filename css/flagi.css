@@ -5,6 +5,7 @@
 	font-weight: bold;
 	margin-top: 25px;
 	position: relative;
+	z-index: 50;
 }
 .lang-menu .selected-lang {
 	display: flex;
