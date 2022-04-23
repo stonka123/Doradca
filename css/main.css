@@ -122,8 +122,19 @@ body {
   overflow-x: hidden;
 }
 
-#languageSwitcher {
+.languageSwitcher {
   z-index: 199999;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background: black;
+  padding: 5px;
+  border: none;
+}
+
+.languageSwitcher option {
+  background: transparent;
+  border: none;
 }
 
 .content {

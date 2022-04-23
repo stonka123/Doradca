@@ -54,12 +54,10 @@
 
                 </div> -->
                 <p class="logo-icon">Oliwia Gauza</p>
-                <select name="language" id="languageSwitcher">
-                    <option value="Polish">🇵🇱&emsp;Polska</option>
-                    <option value="English">🇬🇧&emsp;English</option>
-                    <option value="Germany">🇩🇪&emsp;Germany</option>
-
-
+                <select name="language" id="languageSwitcher" class="languageSwitcher">
+                    <option class="options" value="pl">🇵🇱&emsp;Polska</option>
+                    <option class="options" value="en">🇬🇧&emsp;English</option>
+                    <option class="options" value="de">🇩🇪&emsp;Germany</option>
                 </select>
             </div>
             <img class="imgg" src="./img/headerr.png" alt="">
@@ -84,10 +82,10 @@
             </div>
             <nav class="nav ">
                 <div class="nav__items notranslate ">
-                    <a href="#aboutme" class="nav__items-item ">O mnie</a>
-                    <a href="#offer" class="nav__items-item ">Oferta</a>
-                    <a href="#opinion" class="nav__items-item ">Opinie</a>
-                    <a href="#contact" class="nav__items-item ">Kontakt</a>
+                    <a href="#aboutme" class="nav__items-item" data-i18n="intro.aboutme">O mnie</a>
+                    <a href="#offer" class="nav__items-item " data-i18n="intro.offer">Oferta</a>
+                    <a href="#opinion" class="nav__items-item " data-i18n="intro.opinion">Opinie</a>
+                    <a href="#contact" class="nav__items-item " data-i18n="intro.contact">Kontakt</a>
                     <!-- <a href="eng.html" class="flaga"></a> -->
 
                 </div>
@@ -119,7 +117,7 @@
         </div>
         <main class="main">
             <section class="section">
-                <div class="section__title" id="aboutme">O mnie</div>
+                <div class="section__title" id="aboutme" data-i18n="intro.aboutme">O mnie</div>
             </section>
             <section class="aboutme">
                 <div class="aboutme__box">

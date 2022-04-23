@@ -27,27 +27,39 @@ $(function () {
 				debug: true,
 				fallbackLng: 'Polish',
 				resources: {
-					Polish: {
+					pl: {
 						translation: {
 							intro: {
 								title: 'Doradca kredytowy',
 								subTitle: 'Powierz mi swoje finanse',
+								aboutme: 'O mnie',
+								offer: 'Oferta',
+								opinion: 'Opinie',
+								contact: 'Kontakt',
 							},
 						},
 					},
-					English: {
+					en: {
 						translation: {
 							intro: {
 								title: 'Ekspert Credit',
 								subTitle: 'Take my me finanse',
+								aboutme: 'About me',
+								offer: 'Offer',
+								opinion: 'Opinion',
+								contact: 'Contact',
 							},
 						},
 					},
-					Germany: {
+					de: {
 						translation: {
 							intro: {
 								title: 'Experto dojczland',
 								subTitle: 'Ein frach piniochy',
+								aboutme: 'DE omnie',
+								offer: ' DE Oferta',
+								opinion: 'De Opinie',
+								contact: 'De Kontakt',
 							},
 						},
 					},
